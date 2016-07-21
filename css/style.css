@@ -5,15 +5,29 @@ html {
 	box-sizing: inherit;
 }
 body {
-	background-color: LightGray;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
 }
 head {
 	display: none;
 }
 div {
 	display: block;
+}
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
 }
 /* background image */
 .introduction{
@@ -33,6 +47,7 @@ div {
 	z-index: 9999;
 }
 .top-navigation > .content {
+	height: 4.375rem;
 	height: 70px;
 	margin: 0 auto;
 	padding: 0px 15px;
@@ -48,26 +63,27 @@ div {
 	margin-top: 1.7rem;
 	font-size: 1.04rem;
 	color: #838994;
-	font-size: 1.04rem;
-	margin-top: 1.7rem;
 }
-ol, ul {
-	list-style: none;
-
-}
-.top-navigation .links li {
+.links li {
 	display: inline-block;
-	margin-left: 16px;
-
+	margin-left: 1.563rem;
 }
 .top-navigation .links > .active {
 	color: #4c5058;
 	font-weight: 500;
 }
+.top-navigation .links li:hover {
+	cursor: pointer;
+	color: #333333;
+}
 .content {
 	padding: 0 0.938rem;
 	margin: 0 auto;
 	min-width: 37.5rem;
+	width: 46rem;
+}
+:focus {
+	outline: none;
 }
 .introduction h1, .introduction h3 {
 	color: white;
@@ -87,13 +103,107 @@ ol, ul {
 	text-align: center;
 	margin-top: 1.563rem;
 }
-button {
-	width: 9.688rem;
-	background-color: #f15a29;
-	text-shadow: none;
-	border-style: none;
-	border-radius: none;
-	padding: 1rem 1.5rem;
-	color: white;
+.introduction .half {
+	width: 49%;
+	padding: 0 0.938rem;
+	display: inline-block;
+	vertical-align: bottom;
 	font-size: 1.125rem;
+	line-height: 1.2;
+}
+h2 {
+	text-align: center;
+	font-size: 2.75rem;
+	margin-top: 1.625rem;
+	margin-right: 0px;
+	margin-bottom: 3.125rem;
+	margin-left: 0px;
+	font-weight: 300;
+}
+h3 {
+	font-size: 100%;
+}
+.devices {  /* WILLIAM NOTE: no reason to set this element to "inline-block"*/;
+	margin:0 auto;
+	width:740spx;   /* WILLIAM NOTE: Set width */
+}
+
+.devices > li {
+	width:31%;
+	display: inline-block;
+	margin:0px;/* WILLIAM NOTE: create space between li's */
+	text-align: center;
+}
+
+.caption {
+	text-align: center;
+	display: inline-block;
+	margin:2.5rem 0px 1.875rem;
+	box-sizing: border-box;
+	font-size: 1.563rem;
+	font-weight: 400;
+}
+
+
+/* WILLIAM NOTE: removed duplicate "caption" selectors. */
+
+.img {
+	display: inline-block;
+	max-width:200px;
+	box-sizing: border-box;
+}
+.fa {
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: inherit;
+	line-height: 1;
+	font-family: FontAwesome;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+.social {
+	background-color: #fff;
+	overflow: auto;
+	padding-bottom: 9.375rem;
+	text-align: center;
+}
+.social hr {
+	border:0;
+	border-top: 1px solid #eaebec;
+	margin: 1.313rem 0;
+}
+.social .icons > li {
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	margin: 1.25rem 5px;
+	border:1px solid #eaebec;
+	padding: 0.625rem 0;
+	text-align: center;
+}
+.social .twitter {
+	color: #55acee;
+}
+.social .facebook {
+	color: #55acee;
+}
+.social .instagram {
+	color: #55acee;
+}
+.social .copy {
+	font-size: 0.938rem;
+	font-weight: 300;
+	color: #838994;
+}
+h5 {
+    display: block;
+    font-size: 0.83em;
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
 }
